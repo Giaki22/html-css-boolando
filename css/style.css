@@ -1,7 +1,7 @@
 /* Reset */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px 0px;
     box-sizing: border-box;
 }
 .clearfix::after{
@@ -9,22 +9,69 @@
     clear: both;
     display: table;
 }
-
-/* Debug */
-.product{ 
+/* Section */
+.firstline,.secondline{
+    padding: 1%;
     width: 100%;
-    max-height: 700px;
-    max-width: 400px;
-    margin: 100px;
+}
+.product{
     float: left;
+    width: 32.5%;
+    height: 100%;
     position: relative;
 }
-.firstline, .secondline{
-    width: 100%;
+.productmiddle{
+    float: left;
+    width: 32.5%;
+    margin: 0px 15px;
+    height: 100%;
+    position: relative;
+}
+/* Text */
+h2{
+    text-transform: uppercase;
+}
+.price{
+    color: red;
+}
+.old-price{
+    text-decoration: line-through;
+}
+/* Tags */
+.tags{
+    position: absolute;
+    bottom: 20%;
+    left: 0px;
+    display: inline;
+    font-size: 30px;
+}
+.discount{
+    background-color: #ec0037;
+    color: white;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+.sustainability{
+    color: white;
+    background-color: #018759;
+    padding: 5px 10px;
+}
+.heart{
+    display: inline;
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    background-color: white;
+    padding: 15px;
+    font-size: 25px;
+}
+.heart:hover{
+    color: red;
 }
 /* Images */
 img{
     width: 100%;
+    object-fit: cover;
 }
 img.hidden{
     position: absolute;
@@ -40,50 +87,4 @@ img.hidden{
 .hover:not(:hover){
     opacity: 100%;
     transition-duration: 0.7s;
-}
-
-/* Text */
-h2{
-    text-transform: uppercase;
-}
-.price{
-    color: red;
-}
-.old-price{
-    text-decoration: line-through;
-}
-
-/* Tags */
-.discount{
-    display: inline;
-    position: relative;
-    top: -80px;
-    left: 0px;
-    background-color: red;
-    color: white;
-    padding: 2px 5px;
-    margin-right: 5px;
-    font-size: 25px;
-}
-.heart{
-    display: inline;
-    position: relative;
-    background-color: white;
-    top: -525px;
-    left: 275px;
-    padding: 15px;
-    font-size: 25px;
-}
-.heart:hover{
-    color: red;
-}
-.sustainability{
-    display: inline;
-    color: white;
-    background-color: green;
-    position: relative;
-    top: -80px;
-    left: -50px;
-    padding: 2px 5px;
-    font-size: 25px;
 }
