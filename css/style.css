@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1500px;
 }
+
 /* Sections */
 .text{
     position: relative;
@@ -14,7 +14,7 @@
 }
 .product{
     position: relative;
-    margin: 50px 150px;
+    margin: 50px 100px;
     float: left;
 }
 .discount{
