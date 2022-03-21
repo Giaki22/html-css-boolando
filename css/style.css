@@ -4,3 +4,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Text */
+h2{
+    text-transform: uppercase;
+}
+/* Sections */
+.product{
+    position: relative;
+}
+/* Images */
+img{
+    max-height: 700px;
+}
+img.hidden{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.hover:hover{
+    opacity: 0%;
+    transition-duration: 0.7s;
+}
+.hover:not(:hover){
+    opacity: 100%;
+    transition-duration: 0.7s;
+}
