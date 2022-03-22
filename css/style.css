@@ -1,74 +1,28 @@
 /* Reset */
 *{
-    margin: 0px;
-    padding: 0px 0px;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-/* Section */
-.firstline,.secondline{
-    padding: 1%;
+
+/* Sections */
+.container{
+    display: inline-block;
     width: 100%;
+    margin-left: 5%;
 }
 .product{
-    float: left;
-    width: 32.5%;
-    height: 100%;
+    max-width: 700px;
+    width: calc(100%/4);
+    margin: 0 30px;
     position: relative;
+    display: inline-block;
 }
-.productmiddle{
-    float: left;
-    width: 32.5%;
-    margin: 0px 15px;
-    height: 100%;
-    position: relative;
+.product:not(:last-child) {
+    margin-bottom: 30px;
 }
-/* Text */
-h2{
-    text-transform: uppercase;
-}
-.price{
-    color: red;
-}
-.old-price{
-    text-decoration: line-through;
-}
-/* Tags */
-.tags{
-    position: absolute;
-    bottom: 20%;
-    left: 0px;
-    display: inline;
-    font-size: 30px;
-}
-.discount{
-    background-color: #ec0037;
-    color: white;
-    margin-right: 5px;
-    padding: 5px 10px;
-}
-.sustainability{
-    color: white;
-    background-color: #018759;
-    padding: 5px 10px;
-}
-.heart{
-    display: inline;
-    position: absolute;
-    top: 10%;
-    right: 0px;
-    background-color: white;
-    padding: 15px;
-    font-size: 25px;
-}
-.heart:hover{
-    color: red;
-}
-/* Images */
+
+/* Pics */
 img{
     width: 100%;
     object-fit: cover;
@@ -87,4 +41,49 @@ img.hidden{
 .hover:not(:hover){
     opacity: 100%;
     transition-duration: 0.7s;
+}
+/* Tags */
+.tags{
+    position: absolute;
+    bottom: 20%;
+    left: 0px;
+    display: inline-block;
+    font-size: 30px;
+}
+.discount{
+    background-color: #ec0037;
+    color: white;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+.sustainability{
+    color: white;
+    background-color: #018759;
+    padding: 5px 10px;
+}
+.heart{
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    background-color: white;
+    padding: 20px;
+    font-size: 35px;
+}
+.heart:hover{
+    color: red;
+}
+/* Text */
+h2{
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.price{
+    color: red;
+    margin-right: 10px;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.text{
+    font-size: 1.5em;
 }
